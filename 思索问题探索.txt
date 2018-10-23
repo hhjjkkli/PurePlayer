@@ -1,0 +1,63 @@
+2018/10/23
+表面上是死锁问题,在调试了十几个小时后,通过打断点和打log的方式,发现问题在于:
+int VideoPlayer::show_frame_sdl(void* mp) {
+	//prepare();
+	mPlayer->wait_state(PlayerState::READY);
+
+	VideoPlayer::videoProportion = mPlayer->videoPlayer->videoDecoder.get_width() / (double)mPlayer->videoPlayer->videoDecoder.get_height();
+	frameYUV = av_frame_alloc();
+	int numBytes = av_image_get_buffer_size(AV_PIX_FMT_YUV420P, mPlayer->videoPlayer->videoDecoder.get_width(), mPlayer->videoPlayer->videoDecoder.get_height(), 1);
+	//GETCALLERINFO; logd(Log::caller, "VideoPlayer::show_frame_sdl(): numBytes=%d", numBytes);
+	uint8_t *OutBuffer = (uint8_t *)av_malloc(numBytes * sizeof(uint8_t));
+	av_image_fill_arrays(frameYUV->data, frameYUV->linesize, OutBuffer, AV_PIX_FMT_YUV420P, mPlayer->videoPlayer->videoDecoder.get_width(), mPlayer->videoPlayer->videoDecoder.get_height(), 1);
+
+	//如果只是简简单单地设置RESIZABLE，是不能SetWindowSize的，会失败卡住，还必须PullEvent进行事件处理循环2018/4/10/2/57
+	//SDL_SetWindowSize(ManagerPlayer::window, 1280, 720);
+
+	ManagerPlayer::videoTexture = SDL_CreateTexture(ManagerPlayer::renderer, SDL_PIXELFORMAT_IYUV, SDL_TEXTUREACCESS_STREAMING,
+		mPlayer->videoPlayer->videoDecoder.get_width(), mPlayer->videoPlayer->videoDecoder.get_height());
+	// GETCALLERINFO; log("ManagerPlayer::window=%x.", ManagerPlayer::window);
+	//SDL_SetWindowSize(ManagerPlayer::window, static_cast<int>(VideoPlayer::videoProportion * 360), 360);
+	GETCALLERINFO; logd(Log::caller, "VideoPlayer.show_frame_sdl(): next into a loop of get_img_frame()");
+	while (mPlayer->videoPlayer->get_img_frame(frameYUV)) {
+		//GETCALLERINFO; logd(Log::caller, "on loop...");
+		while (mPlayer->pause_request == true) {
+			SDL_Delay(40);
+			//GETCALLERINFO; logd(Log::caller, "VideoPlayer.show_frame_sdl(): next SDL_UpdateTexture(),framesize=%d", mPlayer->videoPlayer->videoDecoder.frame_queue.get_size());
+
+			SDL_RenderClear(ManagerPlayer::renderer);
+			//SDL_Texture *tex = TextureManager::LoadTexture("assets/play.bmp");
+			//TextureManager::Draw(tex, NULL, NULL, SDL_FLIP_NONE);
+
+			SDL_UpdateTexture(ManagerPlayer::videoTexture, NULL, frameYUV->data[0], frameYUV->linesize[0]);
+			SDL_RenderCopy(ManagerPlayer::renderer, ManagerPlayer::videoTexture, NULL, &VideoPlayer::videoDestRect);
+
+			ManagerPlayer::updateUI();
+			mPlayer->drawUI();
+
+			((ManagerPlayer*)mp)->handleEvent();
+			SDL_RenderPresent(ManagerPlayer::renderer);
+		}
+		////GETCALLERINFO; logd(Log::caller, "VideoPlayer.show_frame_sdl(): next SDL_UpdateTexture(),framesize=%d", mPlayer->videoPlayer->videoDecoder.frame_queue.get_size());
+
+		SDL_RenderClear(ManagerPlayer::renderer);
+		//SDL_Texture *tex = TextureManager::LoadTexture("assets/play.bmp");
+		//TextureManager::Draw(tex, NULL, NULL, SDL_FLIP_NONE);
+
+		SDL_UpdateTexture(ManagerPlayer::videoTexture, NULL, frameYUV->data[0], frameYUV->linesize[0]);
+		SDL_RenderCopy(ManagerPlayer::renderer, ManagerPlayer::videoTexture, NULL, &VideoPlayer::videoDestRect);
+
+		ManagerPlayer::updateUI();
+		mPlayer->drawUI();
+
+		SDL_RenderPresent(ManagerPlayer::renderer);
+	}
+
+	return 0;
+}
+的下面这两行:
+//如果只是简简单单地设置RESIZABLE，是不能SetWindowSize的，会失败卡住，还必须PullEvent进行事件处理循环2018/4/10/2/57
+//SDL_SetWindowSize(ManagerPlayer::window, 1280, 720);
+亏我曾经还是写了注释的,现在才注意到.
+不过还是有个疑问:
+此处卡住,则这个线程std::thread videoThread(videoThreadWrap);卡住,从而不会从队列里取出frame,导致frame队列满,继而再导致packet队列满,然后video部分的解出packet线程卡在队列的wait函数,video部分的解出frame的线程也会卡在wait函数,但是std::thread audioThread(audioThreadWrap);为什么也会因此而卡住,这明明是两个不相干的线程啊?从log打印的mutex的地址来看,两个线程的队列的互斥量是不同的对象,那么一个锁住了另一个应该是不受影响的才对.

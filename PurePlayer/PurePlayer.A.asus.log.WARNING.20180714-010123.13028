@@ -1,0 +1,5 @@
+Log file created at: 2018/07/14 01:01:23
+Running on machine: A
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+W0714 01:01:23.176446 11216 main.cpp:51] This is WARNING
+E0714 01:01:23.176446 11216 main.cpp:52] This is Error

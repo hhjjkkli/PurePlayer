@@ -1,0 +1,20 @@
+﻿1:48 2018/4/10
+//如果第三个参数是AV_PIX_FMT_NONE，就会导致runtime error，花了一天时间找这个问题
+//但是在另一个项目中，都不会出现AV_PIX_FMT_NONE，这里为什么会这样呢？----疏忽之下，没有find_stream_info，导致调试了一天。
+应该把时间处理和视频刷新放在同一个循环里，否则，UI和视频刷新会冲突。视频似乎也有些掉帧。
+
+
+AVFormatContext *t_format_ctx = avformat_alloc_context();
+ret = avformat_open_input(&t_format_ctx, this->file_path, NULL, NULL);
+ret = avformat_find_stream_info(this->format_ctx, NULL);
+avctx = avcodec_alloc_context3(NULL);
+ret = avcodec_parameters_to_context(avctx, av_codec_set_pkt_timebase(avctx, format_ctx->streams[stream_num]->time_base);
+codec = avcodec_find_decoder(avctx->codec_id);this->format_ctx->streams[stream_num]->codecpar);
+ret = avcodec_open2(avctx, codec, NULL);
+this->swr_ctx = swr_alloc_set_opts(swr_ctx, AV_CH_LAYOUT_STEREO,
+			AV_SAMPLE_FMT_S16, avctx->sample_rate,
+			av_get_default_channel_layout(avctx->channels), avctx->sample_fmt, avctx->sample_rate,
+			0, NULL);
+ret = avcodec_send_packet(avctx, &pkt);
+frame->pts = av_frame_get_best_effort_timestamp(frame);
+	

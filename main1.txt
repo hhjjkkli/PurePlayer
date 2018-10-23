@@ -1,0 +1,58 @@
+﻿#include <SDL.h>
+#include <Windows.h>
+#include "log.h"
+#include "ManagerPlayer.h"
+#include "AudioPlayer.h"
+#include "VideoPlayer.h"
+
+#pragma warning(disable:4819)
+
+int WINAPI WinMain(
+	HINSTANCE hInstance,
+	HINSTANCE hPrevInstance,
+	LPSTR     lpCmdLine,
+	int       nCmdShow
+)
+{
+	/*FLAGS_log_dir = "./";
+	google::SetLogDestination(google::GLOG_INFO, "./log");
+	google::InitGoogleLogging("PurePlayer");
+	LOG(INFO) << __FUNCTION__;
+	不用这个库了，因为之前写的代码难以全部更改*/
+	logc();
+
+	GETCALLERINFO; logd(Log::caller, "test");
+
+	ManagerPlayer *managerOfPlayer = new ManagerPlayer();
+
+	//为什么800 640就可以自动切换到合适比例其它数字就不行
+	managerOfPlayer->init("DreamItPossible.mp4", (char*)"Pure Media Player", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 800, 640, false);
+	managerOfPlayer->wait_state(PlayerState::READY);
+
+	//std::thread videoThread(managerOfPlayer->videoPlayer->show_frame_sdl, (void*)managerOfPlayer);
+	//std::thread audioThread(play_audio_sdl, (void*)managerOfPlayer);
+	//std::thread audioThread(AudioPlayer::play_audio_sdl);
+	
+	//audioThread.join();
+	//videoThread.join();
+
+	/*managerOfPlayer->videoPlayer->prepare();
+	managerOfPlayer->audioPlayer->prepare();
+	while (managerOfPlayer->running()) 
+	{
+		//managerOfPlayer->videoPlayer->play_current_frame();
+		managerOfPlayer->audioPlayer->play_current_frame();
+		managerOfPlayer->handleEvent();
+		
+		//if(It's time to go next frame of video) {
+		//managerOfPlayer->update();
+		//managerOfPlayer->render();
+		//}
+
+		GETCALLERINFO; logd(Log::caller, "Made one loop.");
+	}*/
+
+	managerOfPlayer->clean();
+
+	return 0;
+}

@@ -1,0 +1,43 @@
+﻿  VideoPlayer.cpp
+d:\1vsproject\pureplayer\include\libavutil\rational.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\1vsproject\pureplayer\pureplayer\videoplayer.cpp(38): warning C4244: “初始化”: 从“double”转换到“int64_t”，可能丢失数据
+  ManagerPlayer.cpp
+d:\1vsproject\pureplayer\include\libavutil\rational.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\1vsproject\pureplayer\pureplayer\managerplayer.cpp(187): warning C4018: “<”: 有符号/无符号不匹配
+d:\1vsproject\pureplayer\pureplayer\managerplayer.cpp(276): warning C4018: “>=”: 有符号/无符号不匹配
+  正在生成代码...
+d:\1vsproject\pureplayer\pureplayer\managerplayer.cpp(398): warning C4715: “ManagerPlayer::get_duration”: 不是所有的控件路径都返回值
+  正在编译...
+  main2.cpp
+d:\1vsproject\pureplayer\include\libavutil\rational.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  log.cpp
+  VideoDecoder.cpp
+d:\1vsproject\pureplayer\include\libavutil\rational.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  UtilityHeader.cpp
+d:\1vsproject\pureplayer\include\libavutil\rational.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  TextureManager.cpp
+d:\1vsproject\pureplayer\include\libavutil\rational.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  PacketQueue.cpp
+d:\1vsproject\pureplayer\include\libavutil\rational.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  ManagerUI.cpp
+d:\1vsproject\pureplayer\include\libavutil\rational.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\1vsproject\pureplayer\pureplayer\managerui.cpp(25): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+  FrameQueue.cpp
+d:\1vsproject\pureplayer\include\libavutil\rational.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\1vsproject\pureplayer\pureplayer\framequeue.cpp(16): warning C4244: “=”: 从“double”转换到“int64_t”，可能丢失数据
+  Button.cpp
+d:\1vsproject\pureplayer\include\libavutil\rational.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  BasePlayer.cpp
+d:\1vsproject\pureplayer\include\libavutil\rational.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  BaseDecoder.cpp
+d:\1vsproject\pureplayer\include\libavutil\rational.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  AudioPlayer.cpp
+d:\1vsproject\pureplayer\include\libavutil\rational.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\1vsproject\pureplayer\pureplayer\audioplayer.cpp(23): warning C4018: “>”: 有符号/无符号不匹配
+d:\1vsproject\pureplayer\pureplayer\audioplayer.cpp(34): warning C4101: “nextSize”: 未引用的局部变量
+d:\1vsproject\pureplayer\pureplayer\audioplayer.cpp(121): warning C4244: “初始化”: 从“double”转换到“int64_t”，可能丢失数据
+d:\1vsproject\pureplayer\pureplayer\audioplayer.cpp(138): warning C4101: “nextSize”: 未引用的局部变量
+  AudioDecoder.cpp
+d:\1vsproject\pureplayer\include\libavutil\rational.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  正在生成代码...
+  PurePlayer.vcxproj -> D:\1VSProject\PurePlayer\x64\Debug\PurePlayer.exe

@@ -1,0 +1,109 @@
+﻿  VideoPlayer.cpp
+d:\1vsproject\pureplayer\pureplayer\include\libavutil\rational.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  VideoDecoder.cpp
+d:\1vsproject\pureplayer\pureplayer\include\libavutil\rational.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  UtilityHeader.cpp
+d:\1vsproject\pureplayer\pureplayer\include\libavutil\rational.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  SubtitlePlayer.cpp
+d:\1vsproject\pureplayer\pureplayer\include\libavutil\rational.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  SubtitleDecoder.cpp
+d:\1vsproject\pureplayer\pureplayer\include\libavutil\rational.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  stdafx.cpp
+  ProgressBar.cpp
+  PacketQueue.cpp
+d:\1vsproject\pureplayer\pureplayer\include\libavutil\rational.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  ManagerPlayer.cpp
+d:\1vsproject\pureplayer\pureplayer\include\libavutil\rational.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\1vsproject\pureplayer\pureplayer\managerplayer.cpp(125): warning C4018: “<”: 有符号/无符号不匹配
+d:\1vsproject\pureplayer\pureplayer\managerplayer.cpp(213): warning C4018: “>=”: 有符号/无符号不匹配
+  ManagerDecoder.cpp
+  main.cpp
+d:\1vsproject\pureplayer\pureplayer\include\libavutil\rational.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  log.cpp
+  FrameQueue.cpp
+d:\1vsproject\pureplayer\pureplayer\include\libavutil\rational.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  Button.cpp
+  BaseDecoder.cpp
+d:\1vsproject\pureplayer\pureplayer\include\libavutil\rational.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  BasePlayer.cpp
+d:\1vsproject\pureplayer\pureplayer\include\libavutil\rational.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  AudioPlayer.cpp
+d:\1vsproject\pureplayer\pureplayer\include\libavutil\rational.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\1vsproject\pureplayer\pureplayer\audioplayer.cpp(15): warning C4018: “>”: 有符号/无符号不匹配
+d:\1vsproject\pureplayer\pureplayer\audioplayer.cpp(28): warning C4101: “nextSize”: 未引用的局部变量
+  AudioDecoder.cpp
+d:\1vsproject\pureplayer\pureplayer\include\libavutil\rational.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  正在生成代码...
+d:\1vsproject\pureplayer\pureplayer\managerplayer.cpp(332): warning C4715: “ManagerPlayer::get_duration”: 不是所有的控件路径都返回值
+AudioDecoder.obj : error LNK2019: 无法解析的外部符号 _av_frame_get_best_effort_timestamp，该符号在函数 "public: virtual int __thiscall AudioDecoder::decode_one_packet(void)" (?decode_one_packet@AudioDecoder@@UAEHXZ) 中被引用
+VideoDecoder.obj : error LNK2001: 无法解析的外部符号 _av_frame_get_best_effort_timestamp
+VideoPlayer.obj : error LNK2001: 无法解析的外部符号 _av_frame_get_best_effort_timestamp
+AudioDecoder.obj : error LNK2019: 无法解析的外部符号 _av_frame_alloc，该符号在函数 "public: virtual int __thiscall AudioDecoder::decode_one_packet(void)" (?decode_one_packet@AudioDecoder@@UAEHXZ) 中被引用
+VideoDecoder.obj : error LNK2001: 无法解析的外部符号 _av_frame_alloc
+VideoPlayer.obj : error LNK2001: 无法解析的外部符号 _av_frame_alloc
+AudioDecoder.obj : error LNK2019: 无法解析的外部符号 _av_frame_free，该符号在函数 "public: virtual int __thiscall AudioDecoder::decode_one_packet(void)" (?decode_one_packet@AudioDecoder@@UAEHXZ) 中被引用
+AudioPlayer.obj : error LNK2001: 无法解析的外部符号 _av_frame_free
+VideoPlayer.obj : error LNK2001: 无法解析的外部符号 _av_frame_free
+AudioDecoder.obj : error LNK2019: 无法解析的外部符号 _avcodec_send_packet，该符号在函数 "public: virtual int __thiscall AudioDecoder::decode_one_packet(void)" (?decode_one_packet@AudioDecoder@@UAEHXZ) 中被引用
+VideoDecoder.obj : error LNK2001: 无法解析的外部符号 _avcodec_send_packet
+AudioDecoder.obj : error LNK2019: 无法解析的外部符号 _avcodec_receive_frame，该符号在函数 "public: virtual int __thiscall AudioDecoder::decode_one_packet(void)" (?decode_one_packet@AudioDecoder@@UAEHXZ) 中被引用
+VideoDecoder.obj : error LNK2001: 无法解析的外部符号 _avcodec_receive_frame
+AudioPlayer.obj : error LNK2019: 无法解析的外部符号 _av_malloc，该符号在函数 "int __cdecl play_audio_sdl(void *)" (?play_audio_sdl@@YAHPAX@Z) 中被引用
+ManagerPlayer.obj : error LNK2001: 无法解析的外部符号 _av_malloc
+PacketQueue.obj : error LNK2001: 无法解析的外部符号 _av_malloc
+VideoPlayer.obj : error LNK2001: 无法解析的外部符号 _av_malloc
+AudioPlayer.obj : error LNK2019: 无法解析的外部符号 _av_samples_get_buffer_size，该符号在函数 "public: bool __thiscall AudioPlayer::get_aud_buffer(unsigned char *)" (?get_aud_buffer@AudioPlayer@@QAE_NPAE@Z) 中被引用
+AudioPlayer.obj : error LNK2019: 无法解析的外部符号 _swr_convert，该符号在函数 "public: bool __thiscall AudioPlayer::get_aud_buffer(unsigned char *)" (?get_aud_buffer@AudioPlayer@@QAE_NPAE@Z) 中被引用
+AudioPlayer.obj : error LNK2019: 无法解析的外部符号 _av_gettime_relative，该符号在函数 "public: bool __thiscall AudioPlayer::get_aud_buffer(unsigned char *)" (?get_aud_buffer@AudioPlayer@@QAE_NPAE@Z) 中被引用
+VideoPlayer.obj : error LNK2001: 无法解析的外部符号 _av_gettime_relative
+AudioPlayer.obj : error LNK2019: 无法解析的外部符号 _SDL_memset，该符号在函数 "void __cdecl callback_audio(void *,unsigned char *,int)" (?callback_audio@@YAXPAXPAEH@Z) 中被引用
+AudioPlayer.obj : error LNK2019: 无法解析的外部符号 _SDL_OpenAudio，该符号在函数 "int __cdecl play_audio_sdl(void *)" (?play_audio_sdl@@YAHPAX@Z) 中被引用
+AudioPlayer.obj : error LNK2019: 无法解析的外部符号 _SDL_PauseAudio，该符号在函数 "int __cdecl play_audio_sdl(void *)" (?play_audio_sdl@@YAHPAX@Z) 中被引用
+AudioPlayer.obj : error LNK2019: 无法解析的外部符号 _SDL_MixAudio，该符号在函数 "void __cdecl callback_audio(void *,unsigned char *,int)" (?callback_audio@@YAXPAXPAEH@Z) 中被引用
+AudioPlayer.obj : error LNK2019: 无法解析的外部符号 _SDL_Delay，该符号在函数 "int __cdecl play_audio_sdl(void *)" (?play_audio_sdl@@YAHPAX@Z) 中被引用
+ManagerPlayer.obj : error LNK2019: 无法解析的外部符号 _SDL_CreateWindow，该符号在函数 "public: void __thiscall ManagerPlayer::init(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,char *,int,int,int,int,bool)" (?init@ManagerPlayer@@QAEXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PADHHHH_N@Z) 中被引用
+ManagerPlayer.obj : error LNK2019: 无法解析的外部符号 _SDL_DestroyWindow，该符号在函数 "public: void __thiscall ManagerPlayer::clean(void)" (?clean@ManagerPlayer@@QAEXXZ) 中被引用
+ManagerPlayer.obj : error LNK2019: 无法解析的外部符号 _SDL_PollEvent，该符号在函数 "public: void __thiscall ManagerPlayer::handleEvent(void)" (?handleEvent@ManagerPlayer@@QAEXXZ) 中被引用
+ManagerPlayer.obj : error LNK2019: 无法解析的外部符号 _SDL_CreateRenderer，该符号在函数 "public: void __thiscall ManagerPlayer::init(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,char *,int,int,int,int,bool)" (?init@ManagerPlayer@@QAEXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PADHHHH_N@Z) 中被引用
+ManagerPlayer.obj : error LNK2019: 无法解析的外部符号 _SDL_RenderClear，该符号在函数 "public: void __thiscall ManagerPlayer::render(void)" (?render@ManagerPlayer@@QAEXXZ) 中被引用
+VideoPlayer.obj : error LNK2001: 无法解析的外部符号 _SDL_RenderClear
+ManagerPlayer.obj : error LNK2019: 无法解析的外部符号 _SDL_RenderPresent，该符号在函数 "public: void __thiscall ManagerPlayer::render(void)" (?render@ManagerPlayer@@QAEXXZ) 中被引用
+VideoPlayer.obj : error LNK2001: 无法解析的外部符号 _SDL_RenderPresent
+ManagerPlayer.obj : error LNK2019: 无法解析的外部符号 _SDL_DestroyRenderer，该符号在函数 "public: void __thiscall ManagerPlayer::clean(void)" (?clean@ManagerPlayer@@QAEXXZ) 中被引用
+ManagerPlayer.obj : error LNK2019: 无法解析的外部符号 _SDL_Init，该符号在函数 "public: void __thiscall ManagerPlayer::init(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,char *,int,int,int,int,bool)" (?init@ManagerPlayer@@QAEXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PADHHHH_N@Z) 中被引用
+ManagerPlayer.obj : error LNK2019: 无法解析的外部符号 _SDL_Quit，该符号在函数 "public: void __thiscall ManagerPlayer::clean(void)" (?clean@ManagerPlayer@@QAEXXZ) 中被引用
+ManagerPlayer.obj : error LNK2019: 无法解析的外部符号 _av_strdup，该符号在函数 "public: void __thiscall ManagerPlayer::init(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,char *,int,int,int,int,bool)" (?init@ManagerPlayer@@QAEXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PADHHHH_N@Z) 中被引用
+ManagerPlayer.obj : error LNK2019: 无法解析的外部符号 _av_log_set_flags，该符号在函数 "public: void __thiscall ManagerPlayer::init(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,char *,int,int,int,int,bool)" (?init@ManagerPlayer@@QAEXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PADHHHH_N@Z) 中被引用
+ManagerPlayer.obj : error LNK2019: 无法解析的外部符号 _av_get_default_channel_layout，该符号在函数 "public: int __thiscall ManagerPlayer::read_stream(int)" (?read_stream@ManagerPlayer@@QAEHH@Z) 中被引用
+ManagerPlayer.obj : error LNK2019: 无法解析的外部符号 _av_codec_set_pkt_timebase，该符号在函数 "public: int __thiscall ManagerPlayer::read_stream(int)" (?read_stream@ManagerPlayer@@QAEHH@Z) 中被引用
+ManagerPlayer.obj : error LNK2019: 无法解析的外部符号 _avcodec_alloc_context3，该符号在函数 "public: int __thiscall ManagerPlayer::read_stream(int)" (?read_stream@ManagerPlayer@@QAEHH@Z) 中被引用
+ManagerPlayer.obj : error LNK2019: 无法解析的外部符号 _avcodec_free_context，该符号在函数 "public: int __thiscall ManagerPlayer::read_stream(int)" (?read_stream@ManagerPlayer@@QAEHH@Z) 中被引用
+ManagerPlayer.obj : error LNK2019: 无法解析的外部符号 _avcodec_parameters_to_context，该符号在函数 "public: int __thiscall ManagerPlayer::read_stream(int)" (?read_stream@ManagerPlayer@@QAEHH@Z) 中被引用
+ManagerPlayer.obj : error LNK2019: 无法解析的外部符号 _avcodec_open2，该符号在函数 "public: int __thiscall ManagerPlayer::read_stream(int)" (?read_stream@ManagerPlayer@@QAEHH@Z) 中被引用
+ManagerPlayer.obj : error LNK2019: 无法解析的外部符号 _av_packet_unref，该符号在函数 "public: void __thiscall ManagerPlayer::read_file(void)" (?read_file@ManagerPlayer@@QAEXXZ) 中被引用
+PacketQueue.obj : error LNK2001: 无法解析的外部符号 _av_packet_unref
+ManagerPlayer.obj : error LNK2019: 无法解析的外部符号 _avcodec_find_decoder，该符号在函数 "public: int __thiscall ManagerPlayer::read_stream(int)" (?read_stream@ManagerPlayer@@QAEHH@Z) 中被引用
+ManagerPlayer.obj : error LNK2019: 无法解析的外部符号 _avio_feof，该符号在函数 "public: void __thiscall ManagerPlayer::read_file(void)" (?read_file@ManagerPlayer@@QAEXXZ) 中被引用
+ManagerPlayer.obj : error LNK2019: 无法解析的外部符号 _av_register_all，该符号在函数 "public: void __thiscall ManagerPlayer::init(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,char *,int,int,int,int,bool)" (?init@ManagerPlayer@@QAEXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PADHHHH_N@Z) 中被引用
+ManagerPlayer.obj : error LNK2019: 无法解析的外部符号 _avformat_network_init，该符号在函数 "public: void __thiscall ManagerPlayer::init(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,char *,int,int,int,int,bool)" (?init@ManagerPlayer@@QAEXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PADHHHH_N@Z) 中被引用
+ManagerPlayer.obj : error LNK2019: 无法解析的外部符号 _avformat_alloc_context，该符号在函数 "public: void __thiscall ManagerPlayer::read_file(void)" (?read_file@ManagerPlayer@@QAEXXZ) 中被引用
+ManagerPlayer.obj : error LNK2019: 无法解析的外部符号 _avformat_open_input，该符号在函数 "public: void __thiscall ManagerPlayer::read_file(void)" (?read_file@ManagerPlayer@@QAEXXZ) 中被引用
+ManagerPlayer.obj : error LNK2019: 无法解析的外部符号 _av_read_frame，该符号在函数 "public: void __thiscall ManagerPlayer::read_file(void)" (?read_file@ManagerPlayer@@QAEXXZ) 中被引用
+ManagerPlayer.obj : error LNK2019: 无法解析的外部符号 _av_seek_frame，该符号在函数 "public: void __thiscall ManagerPlayer::player_seek(void)" (?player_seek@ManagerPlayer@@QAEXXZ) 中被引用
+ManagerPlayer.obj : error LNK2019: 无法解析的外部符号 _av_read_pause，该符号在函数 "public: void __thiscall ManagerPlayer::player_pause(void)" (?player_pause@ManagerPlayer@@QAEXXZ) 中被引用
+ManagerPlayer.obj : error LNK2019: 无法解析的外部符号 _sws_getContext，该符号在函数 "public: int __thiscall ManagerPlayer::read_stream(int)" (?read_stream@ManagerPlayer@@QAEHH@Z) 中被引用
+ManagerPlayer.obj : error LNK2019: 无法解析的外部符号 _swr_alloc，该符号在函数 "public: int __thiscall ManagerPlayer::read_stream(int)" (?read_stream@ManagerPlayer@@QAEHH@Z) 中被引用
+ManagerPlayer.obj : error LNK2019: 无法解析的外部符号 _swr_init，该符号在函数 "public: int __thiscall ManagerPlayer::read_stream(int)" (?read_stream@ManagerPlayer@@QAEHH@Z) 中被引用
+ManagerPlayer.obj : error LNK2019: 无法解析的外部符号 _swr_alloc_set_opts，该符号在函数 "public: int __thiscall ManagerPlayer::read_stream(int)" (?read_stream@ManagerPlayer@@QAEHH@Z) 中被引用
+ManagerPlayer.obj : error LNK2019: 无法解析的外部符号 _swr_free，该符号在函数 "public: int __thiscall ManagerPlayer::read_stream(int)" (?read_stream@ManagerPlayer@@QAEHH@Z) 中被引用
+PacketQueue.obj : error LNK2019: 无法解析的外部符号 _av_init_packet，该符号在函数 "public: int __thiscall PacketQueue::put_nullpacket(void)" (?put_nullpacket@PacketQueue@@QAEHXZ) 中被引用
+PacketQueue.obj : error LNK2019: 无法解析的外部符号 _av_copy_packet，该符号在函数 "public: int __thiscall PacketQueue::get_packet(struct AVPacket *)" (?get_packet@PacketQueue@@QAEHPAUAVPacket@@@Z) 中被引用
+PacketQueue.obj : error LNK2019: 无法解析的外部符号 _av_free_packet，该符号在函数 "public: void __thiscall PacketQueue::flush(void)" (?flush@PacketQueue@@QAEXXZ) 中被引用
+VideoPlayer.obj : error LNK2019: 无法解析的外部符号 _sws_scale，该符号在函数 "public: bool __thiscall VideoPlayer::get_img_frame(struct AVFrame *)" (?get_img_frame@VideoPlayer@@QAE_NPAUAVFrame@@@Z) 中被引用
+VideoPlayer.obj : error LNK2019: 无法解析的外部符号 _av_image_fill_arrays，该符号在函数 "int __cdecl show_frame_sdl(void *)" (?show_frame_sdl@@YAHPAX@Z) 中被引用
+VideoPlayer.obj : error LNK2019: 无法解析的外部符号 _av_image_get_buffer_size，该符号在函数 "int __cdecl show_frame_sdl(void *)" (?show_frame_sdl@@YAHPAX@Z) 中被引用
+VideoPlayer.obj : error LNK2019: 无法解析的外部符号 _SDL_SetWindowSize，该符号在函数 "int __cdecl show_frame_sdl(void *)" (?show_frame_sdl@@YAHPAX@Z) 中被引用
+VideoPlayer.obj : error LNK2019: 无法解析的外部符号 _SDL_CreateTexture，该符号在函数 "int __cdecl show_frame_sdl(void *)" (?show_frame_sdl@@YAHPAX@Z) 中被引用
+VideoPlayer.obj : error LNK2019: 无法解析的外部符号 _SDL_UpdateTexture，该符号在函数 "int __cdecl show_frame_sdl(void *)" (?show_frame_sdl@@YAHPAX@Z) 中被引用
+VideoPlayer.obj : error LNK2019: 无法解析的外部符号 _SDL_RenderCopy，该符号在函数 "int __cdecl show_frame_sdl(void *)" (?show_frame_sdl@@YAHPAX@Z) 中被引用
+D:\1VSProject\PurePlayer\Debug\PurePlayer.exe : fatal error LNK1120: 56 个无法解析的外部命令
